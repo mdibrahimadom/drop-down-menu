@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(11, 0120, 0, 1.0);
+}
+.manu{
+    background-color: dimgray;
+    height: 150px;
+    text-align: center;
+    
+}
+.manu ul{
+    list-style: none;
+    display: inline-flex;
+    color: red;
+}
+.manu ul li{
+    margin: 15px;
+    padding: 15px;
+    width: 120px;
+
+    
+}
+.manu ul li a{
+    text-decoration: none;
+    color: red;
+}
+.active, .manu ul li:hover{
+    background-color: pink;
+    border-radius: 3px;
+}
+.subm{
+    display: none;
+}
+.manu ul li:hover .subm
+{
+display: block;
+position: absolute;
+background-color:dimgray;
+margin-top: 15px;
+margin-left: -15px;
+ }
+ .manu ul li:hover .subm ul{
+    display: block;
+    margin: 10px;
+ }
+ .manu ul li:hover .subm ul li{
+    width: 150px;
+    border-radius: 0;
+    padding: 10px;
+    border-bottom: 1px dotted red;
+    text-align: left;
+    background: transparent;
+ }
+.manu ul li:hover .subm ul li:last-child{
+    border-bottom: none;
+}
+.manu ul li:hover .subm ul li a:hover{
+    color: orange;
+    background-color: dimgray;
+}
+.manu .fa
+{
+    padding-right: 10px;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub2{
+    display: none;
+}
+.hover-me:hover .sub2{
+display: block;
+position: absolute;
+background-color:dimgray;
+margin-top: -40px;
+margin-left: 140px;
+
+}
+ 
